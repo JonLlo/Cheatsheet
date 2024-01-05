@@ -1,0 +1,70 @@
+<html> 
+  <meta charset="utf-8">
+        <link rel="stylesheet" href="styles.css">
+  <head>
+  <title>CSS/HTML: Position + Display Cheatsheet</title> 
+  </head>
+  <body> 
+    <h1> CSS/HTML: Position + Display Cheatsheet </h1>
+<!--Positions-->
+    <h2> Positions </h2>
+  <table id = positions>
+  <thead>
+    <tr>
+      <th>Name</th>
+      <th> Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Static</td>
+      <td>The element is positioned according to the normal flow of the document. The top, right, bottom, left, and z-index properties have no effect. This is the default value.</td>
+    </tr>
+    <tr>
+      <td>Relative</td>
+      <td>The element is positioned according to the normal flow of the document, and then offset relative to itself based on the values of top, right, bottom, and left. The offset does not affect the position of any other elements; thus, the space given for the element in the page layout is the same as if position were static.This value creates a new stacking context when the value of z-index is not auto. Its effect on table-*-group, table-row, table-column, table-cell, and table-caption elements is undefined.</td>
+     </tr>
+    <tr>
+      <td>Absolute</td>
+      <td>The element is removed from the normal document flow, and no space is created for the element in the page layout. The element is positioned relative to its closest positioned ancestor (if any) or to the initial containing block. Its final position is determined by the values of top, right, bottom, and left.This value creates a new stacking context when the value of z-index is not auto. The margins of absolutely positioned boxes do not collapse with other margins.</td>
+    </tr>
+    <tr>
+
+      <td>Fixed</td>
+      <td>The element is removed from the normal document flow, and no space is created for the element in the page layout. The element is positioned relative to its initial containing block, which is the viewport in the case of visual media. Its final position is determined by the values of top, right, bottom, and left.This value always creates a new stacking context. In printed documents, the element is placed in the same position on every page.</td>
+     </tr>
+     <tr>
+
+      <td>Sticky</td>
+      <td>The element is positioned according to the normal flow of the document, and then offset relative to its nearest scrolling ancestor and containing block (nearest block-level ancestor), including table-related elements, based on the values of top, right, bottom, and left. The offset does not affect the position of any other elements.<br>
+      This value always creates a new stacking context. Note that a sticky element "sticks" to its nearest ancestor that has a "scrolling mechanism" (created when overflow is hidden, scroll, auto, or overlay), even if that ancestor isn't the nearest actually scrolling ancestor.</td>
+    </tr>
+  </tbody>
+</table>
+<!--Positions-->
+    <h2> Display </h2>
+  <table id = display>
+  <thead>
+    <tr>
+      <th>Name</th>
+      <th> Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Block</td>
+      <td>The element generates a block box, generating line breaks both before and after the element when in the normal flow.</td>
+    </tr>
+    <tr>
+      <td>Inline-Block</td>
+      <td>The element is positioned according to the normal flow of the document, and then offset relative to itself based on the values of top, right, bottom, and left. The offset does not affect the position of any other elements; thus, the space given for the element in the page layout is the same as if position were static.This value creates a new stacking context when the value of z-index is not auto. Its effect on table-*-group, table-row, table-column, table-cell, and table-caption elements is undefined.</td>
+     </tr>
+  </tbody>
+</table>
+   
+  </body>
+  <footer>
+    <a href="https://www.codeacademy.com" title="Here is my tooltip!">Codeacademy</a>
+
+  </footer>
+</html>
